@@ -36,9 +36,9 @@
     <string name="unica_now_nudge_reply_positive_title">긍정적인 답변</string>
     <string name="unica_now_nudge_reply_neutral_title">중립적인 답변</string>
     <string name="unica_now_nudge_reply_negative_title">부정적인 답변</string>
-    <string name="unica_now_nudge_reply_save_title">폴백 답변 저장</string>
+    <string name="unica_now_nudge_reply_save_title">대체 답변 저장</string>
     <string name="unica_now_nudge_reply_save_summary">JSON 파일에서 이 언어/카테고리를 추가하거나 대체합니다.</string>
-    <string name="unica_now_nudge_reply_saved">Now Nudge 폴백 답변 저장.</string>
+    <string name="unica_now_nudge_reply_saved">Now Nudge 대체 답변 저장.</string>
     <string name="unica_now_nudge_reply_invalid">언어, 카테고리, 그리고 세 개의 답변을 입력하세요.</string>
     <string name="unica_now_nudge_reply_failed">Now Nudge가 응답합니다.</string>
     <string name="unica_scpm_allowlist_title">SCPM 허용목록 (재부팅 필요)</string>
