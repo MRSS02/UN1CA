@@ -88,34 +88,19 @@ ADD_TO_WORK_DIR "m3qxxx" "system" \
     0 0 644 "u:object_r:system_file:s0"
 
 # Gemini shortcut
-# PRODUCT_DEBLOAT+="
-# app/BardShell
-# "
-
-# Gmail
-# PRODUCT_DEBLOAT+="
-# app/Gmail2
-# "
-
-# Google Assistant shortcut
 PRODUCT_DEBLOAT+="
-app/AssistantShell
+app/BardShell
 "
 
-# Google Chrome
-# PRODUCT_DEBLOAT+="
-# app/Chrome
-# "
+# Gmail
+PRODUCT_DEBLOAT+="
+app/Gmail2
+"
 
 # Google Duo
 PRODUCT_DEBLOAT+="
 app/DuoStub
 "
-
-# Google Maps
-# PRODUCT_DEBLOAT+="
-# app/Maps
-# "
 
 # Google PAI (Play Autoinstall)
 SYSTEM_DEBLOAT+="
@@ -152,10 +137,10 @@ system/priv-app/YourPhone_P1_5
 "
 
 # # Live Transcribe
-# SYSTEM_DEBLOAT+="
-# system/app/LiveTranscribe
-# system/etc/sysconfig/feature-a11y-preload.xml
-# "
+SYSTEM_DEBLOAT+="
+system/app/LiveTranscribe
+system/etc/sysconfig/feature-a11y-preload.xml
+"
 
 # Meta
 SYSTEM_DEBLOAT+="
@@ -204,14 +189,14 @@ system/priv-app/AvatarEmojiSticker
 "
 
 # # Samsung Calendar
-# SYSTEM_DEBLOAT+="
-# system/app/SamsungCalendar
-# "
+SYSTEM_DEBLOAT+="
+system/app/SamsungCalendar
+"
 
 # # Samsung Clock
-# SYSTEM_DEBLOAT+="
-# system/app/ClockPackage
-# "
+SYSTEM_DEBLOAT+="
+system/app/ClockPackage
+"
 
 # Samsung Free
 SYSTEM_DEBLOAT+="
@@ -223,13 +208,6 @@ system/app/MinusOnePage
 # system/etc/permissions/signature-permissions-com.samsung.android.offline.languagemodel.xml
 # system/priv-app/OfflineLanguageModel_stub
 # "
-
-# Samsung Messages
-SYSTEM_DEBLOAT+="
-system/etc/default-permissions/default-permissions-com.samsung.android.messaging.xml
-system/etc/permissions/privapp-permissions-com.samsung.android.messaging.xml
-system/priv-app/SamsungMessages
-"
 
 # Samsung Pass
 SYSTEM_DEBLOAT+="
@@ -246,10 +224,10 @@ system/priv-app/AuthFramework
 system/priv-app/SamsungPass
 "
 
-# # Samsung Reminder
-# SYSTEM_DEBLOAT+="
-# system/app/SmartReminder
-# "
+# Samsung Reminder
+SYSTEM_DEBLOAT+="
+system/app/SmartReminder
+"
 
 # Samsung Visit In
 SYSTEM_DEBLOAT+="
@@ -329,7 +307,13 @@ system/app/VoiceAccess
 system/etc/sysconfig/feature-a11y-preload-voacc.xml
 "
 
-# YouTube
-# PRODUCT_DEBLOAT+="
-# app/YouTube
-# "
+# Google
+PRODUCT_DEBLOAT+="
+app/Chrome
+app/Maps
+app/YouTube
+priv-app/AndroidGlassesCore
+priv-app/AiWallpaper
+priv-app/AndroidAutoStub
+priv-app/Turbo
+"
