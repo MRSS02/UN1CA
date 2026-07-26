@@ -9,54 +9,72 @@
       "hai",
       "bonjour",
       "salut",
-      "coucou"
-    ],
+      "coucou",
+      "안녕",
+      "안녕하세요",
+      "여보세요"
+],
     "morning": [
       "good morning",
       "morning",
       "selamat pagi",
       "pagi",
-      "bon matin"
-    ],
+      "bon matin",
+      "좋은 아침",
+      "굿모닝"
+],
     "evening": [
       "good evening",
       "good night",
       "selamat malam",
       "malam",
       "bonsoir",
-      "bonne nuit"
-    ],
+      "bonne nuit",
+      "좋은 저녁",
+      "잘자",
+      "굿나잇"
+],
     "thanks": [
       "thank",
       "thanks",
       "merci",
       "makasih",
       "terima kasih",
-      "trimakasih"
-    ],
+      "trimakasih",
+      "고마워",
+      "감사",
+      "고맙습니다"
+],
     "apology": [
       "sorry",
       "apolog",
       "maaf",
       "desole",
-      "pardon"
-    ],
+      "pardon",
+      "미안",
+      "죄송"
+],
     "confirm": [
       "confirm",
       "confirmation",
       "konfirmasi",
       "confirmasi",
       "valider",
-      "confirmer"
-    ],
+      "confirmer",
+      "확인",
+      "컨펌"
+],
     "approval": [
       "is it ok",
       "is that ok",
       "boleh",
       "setuju",
       "d accord",
-      "ca te va"
-    ],
+      "ca te va",
+      "괜찮아",
+      "괜찮을까",
+      "동의"
+],
     "decline": [
       "cannot",
       "can't",
@@ -64,8 +82,11 @@
       "tidak bisa",
       "gak bisa",
       "ga bisa",
-      "ne peux pas"
-    ],
+      "ne peux pas",
+      "못해",
+      "안돼",
+      "불가능"
+],
     "time": [
       "tomorrow",
       "tonight",
@@ -78,31 +99,43 @@
       "malam",
       "demain",
       "ce soir",
-      "heure"
-    ],
+      "heure",
+      "내일",
+      "오늘밤",
+      "오늘",
+      "나중에",
+      "이따"
+],
     "schedule": [
       "schedule",
       "jadwal",
       "agenda",
       "rendez-vous",
-      "rendez vous"
-    ],
+      "rendez vous",
+      "일정",
+      "스케줄"
+],
     "appointment": [
       "appointment",
       "booking",
       "janji",
       "rdv",
       "reservation",
-      "reservasi"
-    ],
+      "reservasi",
+      "약속",
+      "예약"
+],
     "delay": [
       "late",
       "delay",
       "delayed",
       "telat",
       "terlambat",
-      "retard"
-    ],
+      "retard",
+      "늦어",
+      "지연",
+      "늦을듯"
+],
     "arriving": [
       "arrive",
       "arrived",
@@ -110,23 +143,31 @@
       "otw",
       "on the way",
       "j arrive",
-      "je suis la"
-    ],
+      "je suis la",
+      "도착",
+      "다왔어",
+      "가는중"
+],
     "meeting": [
       "meeting",
       "meet ",
       "rapat",
       "meetingnya",
-      "reunion"
-    ],
+      "reunion",
+      "회의",
+      "미팅"
+],
     "meeting_link": [
       "zoom",
       "teams link",
       "meet link",
       "google meet",
       "link meeting",
-      "lien zoom"
-    ],
+      "lien zoom",
+      "줌",
+      "미팅링크",
+      "구글미트"
+],
     "location": [
       "where are you",
       "where r u",
@@ -134,28 +175,36 @@
       "dimana",
       "di mana",
       "ou es-tu",
-      "tu es ou"
-    ],
+      "tu es ou",
+      "어디야",
+      "위치"
+],
     "address": [
       "address",
       "alamat",
-      "adresse"
-    ],
+      "adresse",
+      "주소"
+],
     "commute": [
       "commute",
       "go home",
       "pulang",
       "berangkat",
       "trajet",
-      "rentrer"
-    ],
+      "rentrer",
+      "출근",
+      "퇴근",
+      "집에가"
+],
     "traffic": [
       "traffic",
       "jammed",
       "macet",
       "embouteillage",
-      "bouchon"
-    ],
+      "bouchon",
+      "교통체증",
+      "막혀"
+],
     "weather": [
       "weather",
       "rain",
@@ -163,41 +212,53 @@
       "hujan",
       "cuaca",
       "meteo",
-      "pluie"
-    ],
+      "pluie",
+      "날씨",
+      "비와"
+],
     "reminder": [
       "remind",
       "reminder",
       "ingatkan",
       "pengingat",
-      "rappel"
-    ],
+      "rappel",
+      "알림",
+      "리마인더"
+],
     "calendar": [
       "calendar",
       "kalender",
-      "agenda"
-    ],
+      "agenda",
+      "캘린더",
+      "달력"
+],
     "alarm": [
       "alarm",
       "wake me",
       "bangunin",
       "alarmku",
-      "reveil"
-    ],
+      "reveil",
+      "알람",
+      "깨워줘"
+],
     "shopping": [
       "shopping",
       "buy ",
       "beli",
       "belanja",
       "acheter",
-      "courses"
-    ],
+      "courses",
+      "쇼핑",
+      "사야돼"
+],
     "shopping_list": [
       "grocery",
       "groceries",
       "daftar belanja",
-      "liste de courses"
-    ],
+      "liste de courses",
+      "장보기",
+      "장볼목록"
+],
     "delivery": [
       "delivery",
       "package",
@@ -205,8 +266,10 @@
       "paket",
       "kurir",
       "livraison",
-      "colis"
-    ],
+      "colis",
+      "배송",
+      "택배"
+],
     "payment": [
       "payment",
       "pay ",
@@ -214,75 +277,96 @@
       "bayar",
       "dibayar",
       "paiement",
-      "payer"
-    ],
+      "payer",
+      "결제",
+      "지불"
+],
     "bank": [
       "bank",
       "transfer",
       "rekening",
       "iban",
-      "virement"
-    ],
+      "virement",
+      "은행",
+      "계좌",
+      "송금"
+],
     "money_request": [
       "borrow",
       "loan",
       "pinjam uang",
       "hutang",
-      "pret"
-    ],
+      "pret",
+      "빌려줘",
+      "돈좀"
+],
     "food": [
       "food",
       "hungry",
       "makan",
       "lapar",
       "nourriture",
-      "faim"
-    ],
+      "faim",
+      "배고파",
+      "밥"
+],
     "coffee": [
       "coffee",
       "kopi",
-      "cafe"
-    ],
+      "cafe",
+      "커피"
+],
     "lunch": [
       "lunch",
       "makan siang",
-      "dejeuner"
-    ],
+      "dejeuner",
+      "점심"
+],
     "dinner": [
       "dinner",
       "makan malam",
-      "diner"
-    ],
+      "diner",
+      "저녁"
+],
     "work": [
       "work",
       "office",
       "kerja",
       "kantor",
       "travail",
-      "bureau"
-    ],
+      "bureau",
+      "일",
+      "회사",
+      "출근"
+],
     "deadline": [
       "deadline",
       "due date",
       "tenggat",
       "deadline-nya",
-      "echeance"
-    ],
+      "echeance",
+      "마감",
+      "데드라인"
+],
     "status_update": [
       "status",
       "update",
       "progress",
       "perkembangan",
       "progres",
-      "avancement"
-    ],
+      "avancement",
+      "진행상황",
+      "업데이트"
+],
     "documents": [
       "document",
       "doc ",
       "file",
       "dokumen",
-      "fichier"
-    ],
+      "fichier",
+      "문서",
+      "파일"
+],
     "school": [
       "school",
       "class",
@@ -290,20 +374,26 @@
       "sekolah",
       "kelas",
       "devoirs",
-      "ecole"
-    ],
+      "ecole",
+      "학교",
+      "숙제",
+      "수업"
+],
     "child_school": [
       "pick up the kids",
       "jemput anak",
       "anak sekolah",
-      "sortie ecole"
-    ],
+      "sortie ecole",
+      "아이 데리러",
+      "하교"
+],
     "home": [
       "home",
       "house",
       "rumah",
-      "maison"
-    ],
+      "maison",
+      "집"
+],
     "chores": [
       "clean",
       "laundry",
@@ -311,8 +401,11 @@
       "bersih",
       "cuci",
       "menage",
-      "vaisselle"
-    ],
+      "vaisselle",
+      "청소",
+      "빨래",
+      "설거지"
+],
     "family": [
       "family",
       "mom",
@@ -322,16 +415,20 @@
       "keluarga",
       "famille",
       "maman",
-      "papa"
-    ],
+      "papa",
+      "가족",
+      "엄마",
+      "아빠"
+],
     "friend": [
       "friend",
       "buddy",
       "teman",
       "sahabat",
       "ami ",
-      "amie"
-    ],
+      "amie",
+      "친구"
+],
     "health": [
       "sick",
       "pain",
@@ -340,45 +437,58 @@
       "dokter",
       "malade",
       "douleur",
-      "medecin"
-    ],
+      "medecin",
+      "아파",
+      "병원",
+      "의사"
+],
     "medicine": [
       "medicine",
       "medication",
       "obat",
       "vitamin",
-      "medicament"
-    ],
+      "medicament",
+      "약",
+      "비타민"
+],
     "tired": [
       "tired",
       "sleepy",
       "capek",
       "lelah",
       "ngantuk",
-      "fatigue"
-    ],
+      "fatigue",
+      "피곤",
+      "졸려"
+],
     "busy": [
       "busy",
       "occupied",
       "sibuk",
       "lagi penuh",
-      "occupe"
-    ],
+      "occupe",
+      "바빠",
+      "바쁨"
+],
     "urgent": [
       "urgent",
       "asap",
       "important",
       "mendesak",
       "penting",
-      "urgence"
-    ],
+      "urgence",
+      "급해",
+      "중요"
+],
     "help": [
       "help",
       "assist",
       "tolong",
       "bantu",
-      "aide"
-    ],
+      "aide",
+      "도와줘",
+      "도움"
+],
     "invite": [
       "invite",
       "join us",
@@ -386,75 +496,95 @@
       "ajak",
       "undang",
       "inviter",
-      "viens"
-    ],
+      "viens",
+      "초대",
+      "같이가자"
+],
     "follow_up": [
       "follow up",
       "following up",
       "menindaklanjuti",
-      "relance"
-    ],
+      "relance",
+      "팔로우업",
+      "후속"
+],
     "send_file": [
       "send me",
       "kirimkan",
       "kirim ",
       "envoyer",
-      "envoie"
-    ],
+      "envoie",
+      "보내줘",
+      "전송해줘"
+],
     "photo": [
       "photo",
       "picture",
       "image",
       "foto",
-      "gambar"
-    ],
+      "gambar",
+      "사진"
+],
     "screenshot": [
       "screenshot",
       "screen shot",
       "ss ",
-      "capture ecran"
-    ],
+      "capture ecran",
+      "스크린샷",
+      "캡처"
+],
     "call": [
       "call me",
       "phone",
       "telepon",
       "telpon",
-      "appelle"
-    ],
+      "appelle",
+      "전화",
+      "통화"
+],
     "voice_note": [
       "voice note",
       "vn ",
       "voice message",
       "pesan suara",
-      "message vocal"
-    ],
+      "message vocal",
+      "음성메시지",
+      "보이스노트"
+],
     "email": [
       "email",
       "e-mail",
       "mail ",
-      "surat elektronik"
-    ],
+      "surat elektronik",
+      "이메일",
+      "메일"
+],
     "contact": [
       "contact",
       "phone number",
       "nomor",
       "kontak",
-      "numero"
-    ],
+      "numero",
+      "연락처",
+      "번호"
+],
     "travel": [
       "travel",
       "trip",
       "perjalanan",
       "jalan-jalan",
-      "voyage"
-    ],
+      "voyage",
+      "여행"
+],
     "vacation": [
       "vacation",
       "holiday",
       "liburan",
       "cuti",
-      "vacances"
-    ],
+      "vacances",
+      "휴가",
+      "방학"
+],
     "flight": [
       "flight",
       "airport",
@@ -462,41 +592,52 @@
       "pesawat",
       "bandara",
       "vol ",
-      "aeroport"
-    ],
+      "aeroport",
+      "비행기",
+      "공항"
+],
     "hotel": [
       "hotel",
       "check-in",
       "check in",
-      "penginapan"
-    ],
+      "penginapan",
+      "호텔",
+      "체크인"
+],
     "train": [
       "train",
       "station",
       "kereta",
       "stasiun",
-      "gare"
-    ],
+      "gare",
+      "기차",
+      "역"
+],
     "parking": [
       "parking",
       "parkir",
-      "stationnement"
-    ],
+      "stationnement",
+      "주차"
+],
     "lost": [
       "lost",
       "missing",
       "hilang",
       "tersesat",
-      "perdu"
-    ],
+      "perdu",
+      "잃어버렸어",
+      "찾을수없어"
+],
     "mistake": [
       "mistake",
       "wrong",
       "typo",
       "salah",
       "keliru",
-      "erreur"
-    ],
+      "erreur",
+      "실수",
+      "잘못"
+],
     "praise": [
       "great job",
       "well done",
@@ -504,49 +645,61 @@
       "bagus",
       "keren",
       "hebat",
-      "bravo"
-    ],
+      "bravo",
+      "잘했어",
+      "대단해"
+],
     "support": [
       "hope you are ok",
       "semangat",
       "stay strong",
-      "courage"
-    ],
+      "courage",
+      "힘내",
+      "화이팅"
+],
     "congratulations": [
       "congrats",
       "congratulations",
       "selamat",
-      "felicitations"
-    ],
+      "felicitations",
+      "축하해",
+      "축하합니다"
+],
     "birthday": [
       "birthday",
       "ulang tahun",
-      "anniversaire"
-    ],
+      "anniversaire",
+      "생일"
+],
     "condolence": [
       "condolence",
       "passed away",
       "meninggal",
       "duka",
-      "deces"
-    ],
+      "deces",
+      "명복",
+      "돌아가셨"
+],
     "weekend": [
       "weekend",
       "akhir pekan",
-      "fin de semaine"
-    ],
+      "fin de semaine",
+      "주말"
+],
     "movie": [
       "movie",
       "film",
       "cinema",
-      "bioskop"
-    ],
+      "bioskop",
+      "영화"
+],
     "gaming": [
       "game",
       "gaming",
       "main game",
-      "jouer"
-    ],
+      "jouer",
+      "게임"
+],
     "sports": [
       "football",
       "soccer",
@@ -554,8 +707,11 @@
       "tennis",
       "bola",
       "olahraga",
-      "sport"
-    ],
+      "sport",
+      "축구",
+      "농구",
+      "운동경기"
+],
     "repair": [
       "repair",
       "fix ",
@@ -563,36 +719,45 @@
       "rusak",
       "perbaiki",
       "reparer",
-      "casse"
-    ],
+      "casse",
+      "고쳐",
+      "수리",
+      "고장"
+],
     "battery": [
       "battery",
       "low battery",
       "baterai",
       "batere",
-      "batterie"
-    ],
+      "batterie",
+      "배터리"
+],
     "charger": [
       "charger",
       "charging",
       "cas ",
-      "chargeur"
-    ],
+      "chargeur",
+      "충전기"
+],
     "internet": [
       "internet",
       "wifi",
       "wi-fi",
       "connection",
       "sinyal",
-      "reseau"
-    ],
+      "reseau",
+      "인터넷",
+      "와이파이"
+],
     "password": [
       "password",
       "passcode",
       "pin ",
       "kata sandi",
-      "mot de passe"
-    ],
+      "mot de passe",
+      "비밀번호",
+      "패스워드"
+],
     "safety": [
       "safe",
       "safety",
@@ -600,719 +765,899 @@
       "danger",
       "bahaya",
       "securite",
-      "dangereux"
-    ],
+      "dangereux",
+      "안전",
+      "조심"
+],
     "emergency": [
       "emergency",
       "911",
       "112",
       "darurat",
-      "urgence"
-    ],
+      "urgence",
+      "긴급",
+      "응급"
+],
     "maybe_later": [
       "later?",
       "another time",
       "lain kali",
       "nanti saja",
-      "plus tard"
-    ],
+      "plus tard",
+      "나중에",
+      "다음에"
+],
     "permission": [
       "can i",
       "may i",
       "boleh aku",
       "izin",
-      "permission"
-    ],
+      "permission",
+      "해도돼",
+      "허락"
+],
     "opinion": [
       "what do you think",
       "menurutmu",
       "opinion",
-      "avis"
-    ],
+      "avis",
+      "어떻게 생각해",
+      "의견"
+],
     "decision": [
       "decide",
       "choice",
       "choose",
       "pilih",
       "putusan",
-      "choisir"
-    ],
+      "choisir",
+      "결정",
+      "선택"
+],
     "availability": [
       "available",
       "free?",
       "are you free",
       "kosong",
       "luang",
-      "disponible"
-    ],
+      "disponible",
+      "시간 돼",
+      "가능해"
+],
     "language": [
       "language",
       "bahasa",
-      "langue"
-    ],
+      "langue",
+      "언어"
+],
     "translation": [
       "translate",
       "translation",
       "terjemah",
       "traduire",
-      "traduction"
-    ],
+      "traduction",
+      "번역"
+],
     "quiet": [
       "quiet",
       "do not disturb",
       "jangan ganggu",
       "diam dulu",
-      "ne derange pas"
-    ],
+      "ne derange pas",
+      "조용히",
+      "방해하지마"
+],
     "pickup": [
       "pick me up",
       "pickup",
       "jemput aku",
       "jemput",
-      "recuperer"
-    ],
+      "recuperer",
+      "데리러",
+      "픽업"
+],
     "dropoff": [
       "drop me",
       "drop off",
       "antar aku",
       "antar",
-      "deposer"
-    ],
+      "deposer",
+      "데려다줘",
+      "내려줘"
+],
     "reservation": [
       "reserve",
       "book a table",
       "pesan tempat",
       "reservasi",
-      "reserver"
-    ],
+      "reserver",
+      "예약"
+],
     "music": [
       "music",
       "song",
       "lagu",
       "playlist",
-      "musique"
-    ],
+      "musique",
+      "음악",
+      "노래"
+],
     "breakfast": [
       "breakfast",
       "sarapan",
-      "petit dejeuner"
-    ],
+      "petit dejeuner",
+      "아침식사",
+      "아침밥"
+],
     "snack": [
       "snack",
       "cemilan",
       "camilan",
-      "gouter"
-    ],
+      "gouter",
+      "간식"
+],
     "dessert": [
       "dessert",
-      "pencuci mulut"
-    ],
+      "pencuci mulut",
+      "디저트",
+      "후식"
+],
     "restaurant": [
       "restaurant",
       "resto",
-      "warung"
-    ],
+      "warung",
+      "식당",
+      "레스토랑"
+],
     "cooking": [
       "cooking",
       "cook ",
       "masak",
-      "cuisiner"
-    ],
+      "cuisiner",
+      "요리"
+],
     "recipe": [
       "recipe",
       "resep",
-      "recette"
-    ],
+      "recette",
+      "레시피"
+],
     "pharmacy": [
       "pharmacy",
       "apotek",
-      "pharmacie"
-    ],
+      "pharmacie",
+      "약국"
+],
     "dentist": [
       "dentist",
       "dokter gigi",
-      "dentiste"
-    ],
+      "dentiste",
+      "치과"
+],
     "hospital": [
       "hospital",
       "rumah sakit",
-      "hopital"
-    ],
+      "hopital",
+      "병원"
+],
     "health_insurance": [
       "health insurance",
       "asuransi kesehatan",
-      "assurance sante"
-    ],
+      "assurance sante",
+      "건강보험"
+],
     "workout": [
       "workout",
       "gym",
       "olahraga pagi",
-      "sport ce soir"
-    ],
+      "sport ce soir",
+      "운동",
+      "헬스"
+],
     "walking": [
       "walk ",
       "walking",
       "jalan kaki",
-      "promenade"
-    ],
+      "promenade",
+      "산책"
+],
     "rest": [
       "take a rest",
       "istirahat",
-      "repos"
-    ],
+      "repos",
+      "휴식"
+],
     "sleep": [
       "sleep",
       "tidur",
-      "dormir"
-    ],
+      "dormir",
+      "잠",
+      "수면"
+],
     "headache": [
       "headache",
       "sakit kepala",
-      "mal a la tete"
-    ],
+      "mal a la tete",
+      "두통"
+],
     "fever": [
       "fever",
       "demam",
-      "fievre"
-    ],
+      "fievre",
+      "열"
+],
     "allergy": [
       "allergy",
       "alergi",
-      "allergie"
-    ],
+      "allergie",
+      "알레르기"
+],
     "vaccine": [
       "vaccine",
       "vaccination",
-      "vaksin"
-    ],
+      "vaksin",
+      "백신",
+      "예방접종"
+],
     "taxi": [
       "taxi",
-      "taksi"
-    ],
+      "taksi",
+      "택시"
+],
     "bus": [
       "bus ",
       "busnya",
       "bus stop",
-      "arret de bus"
-    ],
+      "arret de bus",
+      "버스"
+],
     "metro": [
       "metro",
       "subway",
       "mrt ",
-      "rer "
-    ],
+      "rer ",
+      "지하철"
+],
     "car_rental": [
       "car rental",
       "rental mobil",
-      "location voiture"
-    ],
+      "location voiture",
+      "렌터카"
+],
     "fuel": [
       "fuel",
       "gasoline",
       "bensin",
-      "essence"
-    ],
+      "essence",
+      "주유",
+      "기름"
+],
     "toll": [
       "toll",
       "tol ",
-      "peage"
-    ],
+      "peage",
+      "톨게이트",
+      "통행료"
+],
     "ride_hailing": [
       "grab",
       "gojek",
       "uber",
-      "bolt"
-    ],
+      "bolt",
+      "카카오택시",
+      "우버"
+],
     "passport": [
       "passport",
       "paspor",
-      "passeport"
-    ],
+      "passeport",
+      "여권"
+],
     "visa": [
       "visa ",
-      "visa-nya"
-    ],
+      "visa-nya",
+      "비자"
+],
     "luggage": [
       "luggage",
       "baggage",
       "koper",
       "bagasi",
-      "bagage"
-    ],
+      "bagage",
+      "짐",
+      "수하물"
+],
     "map": [
       "map ",
       "maps",
       "peta",
-      "carte"
-    ],
+      "carte",
+      "지도"
+],
     "travel_checkin": [
       "online check-in",
       "check in online",
-      "check-in online"
-    ],
+      "check-in online",
+      "온라인체크인"
+],
     "travel_checkout": [
       "check-out",
       "checkout",
-      "check out"
-    ],
+      "check out",
+      "체크아웃"
+],
     "boarding": [
       "boarding",
-      "boarding pass"
-    ],
+      "boarding pass",
+      "탑승"
+],
     "customs": [
       "customs",
       "imigrasi",
-      "douane"
-    ],
+      "douane",
+      "세관",
+      "출입국"
+],
     "client": [
       "client",
-      "klien"
-    ],
+      "klien",
+      "고객",
+      "클라이언트"
+],
     "manager": [
       "manager",
       "atasan",
-      "boss"
-    ],
+      "boss",
+      "상사",
+      "매니저"
+],
     "coworker": [
       "coworker",
       "colleague",
       "rekan kerja",
-      "collegue"
-    ],
+      "collegue",
+      "동료"
+],
     "interview": [
       "interview",
       "wawancara",
-      "entretien"
-    ],
+      "entretien",
+      "면접"
+],
     "contract": [
       "contract",
       "kontrak",
-      "contrat"
-    ],
+      "contrat",
+      "계약"
+],
     "invoice": [
       "invoice",
       "faktur",
       "tagihan invoice",
-      "facture"
-    ],
+      "facture",
+      "인보이스",
+      "청구서"
+],
     "receipt": [
       "receipt",
       "struk",
       "kwitansi",
-      "recu"
-    ],
+      "recu",
+      "영수증"
+],
     "refund": [
       "refund",
       "pengembalian dana",
-      "remboursement"
-    ],
+      "remboursement",
+      "환불"
+],
     "discount": [
       "discount",
       "promo",
       "diskon",
-      "reduction"
-    ],
+      "reduction",
+      "할인"
+],
     "subscription": [
       "subscription",
       "langganan",
-      "abonnement"
-    ],
+      "abonnement",
+      "구독"
+],
     "bill": [
       "bill ",
       "tagihan",
-      "facture a payer"
-    ],
+      "facture a payer",
+      "청구서",
+      "고지서"
+],
     "salary": [
       "salary",
       "gaji",
-      "salaire"
-    ],
+      "salaire",
+      "월급",
+      "급여"
+],
     "leave_request": [
       "leave request",
       "annual leave",
       "cuti",
-      "conge"
-    ],
+      "conge",
+      "휴가신청"
+],
     "shift": [
       "shift",
       "jadwal shift",
-      "service du soir"
-    ],
+      "service du soir",
+      "근무",
+      "교대"
+],
     "report": [
       "report",
       "laporan",
-      "rapport"
-    ],
+      "rapport",
+      "보고서"
+],
     "presentation": [
       "presentation",
-      "presentasi"
-    ],
+      "presentasi",
+      "발표",
+      "프레젠테이션"
+],
     "project": [
       "project",
       "proyek",
-      "projet"
-    ],
+      "projet",
+      "프로젝트"
+],
     "task": [
       "task",
       "todo",
       "tugas",
-      "tache"
-    ],
+      "tache",
+      "할일",
+      "태스크"
+],
     "bug_report": [
       "bug ",
       "error app",
       "bugnya",
-      "rapport de bug"
-    ],
+      "rapport de bug",
+      "버그"
+],
     "deployment": [
       "deploy",
       "deployment",
       "rilis app",
-      "deploiement"
-    ],
+      "deploiement",
+      "배포"
+],
     "login_issue": [
       "login issue",
       "cannot login",
       "tidak bisa login",
-      "probleme connexion"
-    ],
+      "probleme connexion",
+      "로그인 안돼",
+      "로그인 오류"
+],
     "rent": [
       "rent",
       "sewa",
-      "loyer"
-    ],
+      "loyer",
+      "월세"
+],
     "landlord": [
       "landlord",
       "pemilik rumah",
-      "proprietaire"
-    ],
+      "proprietaire",
+      "집주인"
+],
     "electricity": [
       "electricity",
       "listrik",
-      "electricite"
-    ],
+      "electricite",
+      "전기"
+],
     "water_supply": [
       "water bill",
       "water supply",
       "air mati",
-      "eau"
-    ],
+      "eau",
+      "단수",
+      "수도"
+],
     "gas_bill": [
       "gas bill",
       "tagihan gas",
-      "facture gaz"
-    ],
+      "facture gaz",
+      "가스요금"
+],
     "home_maintenance": [
       "home maintenance",
       "maintenance rumah",
-      "reparation maison"
-    ],
+      "reparation maison",
+      "집수리"
+],
     "trash": [
       "trash",
       "garbage",
       "sampah",
-      "poubelle"
-    ],
+      "poubelle",
+      "쓰레기"
+],
     "kitchen": [
       "kitchen",
       "dapur",
-      "cuisine maison"
-    ],
+      "cuisine maison",
+      "주방",
+      "부엌"
+],
     "bathroom": [
       "bathroom",
       "kamar mandi",
-      "salle de bain"
-    ],
+      "salle de bain",
+      "화장실"
+],
     "bedroom": [
       "bedroom",
       "kamar tidur",
-      "chambre"
-    ],
+      "chambre",
+      "침실"
+],
     "keys": [
       "keys",
       "key ",
       "kunci",
-      "cle "
-    ],
+      "cle ",
+      "열쇠"
+],
     "door": [
       "door",
       "pintu",
-      "porte"
-    ],
+      "porte",
+      "문"
+],
     "window": [
       "window",
       "jendela",
-      "fenetre"
-    ],
+      "fenetre",
+      "창문"
+],
     "party": [
       "party",
       "pesta",
-      "soiree"
-    ],
+      "soiree",
+      "파티"
+],
     "wedding": [
       "wedding",
       "nikahan",
-      "mariage"
-    ],
+      "mariage",
+      "결혼식"
+],
     "ceremony": [
       "ceremony",
       "upacara",
-      "ceremonie"
-    ],
+      "ceremonie",
+      "행사",
+      "의식"
+],
     "concert": [
       "concert",
-      "konser"
-    ],
+      "konser",
+      "콘서트"
+],
     "ticket": [
       "ticket",
       "tiket",
-      "billet"
-    ],
+      "billet",
+      "티켓",
+      "표"
+],
     "museum": [
       "museum",
-      "musee"
-    ],
+      "musee",
+      "박물관"
+],
     "park": [
       "park ",
       "taman",
-      "parc"
-    ],
+      "parc",
+      "공원"
+],
     "picnic": [
       "picnic",
       "piknik",
-      "pique-nique"
-    ],
+      "pique-nique",
+      "소풍",
+      "피크닉"
+],
     "new_year": [
       "new year",
       "tahun baru",
-      "nouvel an"
-    ],
+      "nouvel an",
+      "새해"
+],
     "neighbor": [
       "neighbor",
       "tetangga",
-      "voisin"
-    ],
+      "voisin",
+      "이웃"
+],
     "guest": [
       "guest",
       "tamu",
-      "invite a la maison"
-    ],
+      "invite a la maison",
+      "손님"
+],
     "host": [
       "host ",
       "hosting",
       "tuan rumah",
-      "accueillir"
-    ],
+      "accueillir",
+      "호스트",
+      "주최"
+],
     "rsvp": [
       "rsvp",
       "confirm attendance",
       "konfirmasi hadir",
-      "confirmer presence"
-    ],
+      "confirmer presence",
+      "참석확인"
+],
     "gift": [
       "gift",
       "present",
       "hadiah",
-      "cadeau"
-    ],
+      "cadeau",
+      "선물"
+],
     "lost_phone": [
       "lost phone",
       "hp hilang",
-      "telephone perdu"
-    ],
+      "telephone perdu",
+      "폰 잃어버렸어"
+],
     "wallet": [
       "wallet",
       "dompet",
-      "portefeuille"
-    ],
+      "portefeuille",
+      "지갑"
+],
     "id_card": [
       "id card",
       "ktp",
       "identity card",
-      "carte identite"
-    ],
+      "carte identite",
+      "신분증",
+      "주민등록증"
+],
     "police": [
       "police",
-      "polisi"
-    ],
+      "polisi",
+      "경찰"
+],
     "security_check": [
       "security check",
       "pemeriksaan keamanan",
-      "controle securite"
-    ],
+      "controle securite",
+      "보안검사"
+],
     "lab_result": [
       "lab result",
       "hasil lab",
-      "resultat labo"
-    ],
+      "resultat labo",
+      "검사결과"
+],
     "cancel_plan": [
       "cancel",
       "batalkan",
-      "annuler"
-    ],
+      "annuler",
+      "취소"
+],
     "reschedule_plan": [
       "reschedule",
       "ubah jadwal",
-      "reprogrammer"
-    ],
+      "reprogrammer",
+      "일정변경"
+],
     "childcare": [
       "childcare",
       "babysit",
       "jaga anak",
-      "garde enfant"
-    ],
+      "garde enfant",
+      "육아",
+      "애봐줘"
+],
     "parent": [
       "parent",
-      "orang tua"
-    ],
+      "orang tua",
+      "부모님"
+],
     "sibling": [
       "brother",
       "sister",
       "kakak",
       "adik",
       "frere",
-      "soeur"
-    ],
+      "soeur",
+      "형",
+      "누나",
+      "동생"
+],
     "partner": [
       "partner",
       "pacar",
       "suami",
       "istri",
-      "conjoint"
-    ],
+      "conjoint",
+      "애인",
+      "남편",
+      "아내"
+],
     "mood_happy": [
       "happy",
       "senang",
       "bahagia",
-      "content"
-    ],
+      "content",
+      "행복",
+      "기뻐"
+],
     "mood_sad": [
       "sad",
       "sedih",
-      "triste"
-    ],
+      "triste",
+      "슬퍼"
+],
     "mood_angry": [
       "angry",
       "marah",
-      "fache"
-    ],
+      "fache",
+      "화나",
+      "짜증"
+],
     "mood_worried": [
       "worried",
       "khawatir",
       "cemas",
-      "inquiet"
-    ],
+      "inquiet",
+      "걱정"
+],
     "mood_stressed": [
       "stressed",
       "stress",
-      "tertekan"
-    ],
+      "tertekan",
+      "스트레스"
+],
     "mood_excited": [
       "excited",
       "tidak sabar",
       "hyped",
-      "enthousiaste"
-    ],
+      "enthousiaste",
+      "설레",
+      "기대"
+],
     "mood_confused": [
       "confused",
       "bingung",
-      "confus"
-    ],
+      "confus",
+      "헷갈려",
+      "혼란"
+],
     "study": [
       "study",
       "belajar",
-      "etudier"
-    ],
+      "etudier",
+      "공부"
+],
     "exam": [
       "exam",
       "ujian",
-      "examen"
-    ],
+      "examen",
+      "시험"
+],
     "lesson": [
       "lesson",
       "pelajaran",
-      "cours"
-    ],
+      "cours",
+      "수업"
+],
     "book": [
       "book ",
       "buku",
-      "livre"
-    ],
+      "livre",
+      "책"
+],
     "library": [
       "library",
       "perpustakaan",
-      "bibliotheque"
-    ],
+      "bibliotheque",
+      "도서관"
+],
     "photo_album": [
       "album",
       "gallery",
-      "galeri"
-    ],
+      "galeri",
+      "앨범"
+],
     "camera_issue": [
       "camera problem",
       "kamera rusak",
-      "probleme camera"
-    ],
+      "probleme camera",
+      "카메라 고장"
+],
     "storage_full": [
       "storage full",
       "memori penuh",
-      "stockage plein"
-    ],
+      "stockage plein",
+      "저장공간 부족"
+],
     "phone_update": [
       "phone update",
       "software update",
       "update hp",
-      "mise a jour telephone"
-    ],
+      "mise a jour telephone",
+      "폰 업데이트"
+],
     "backup_data": [
       "backup data",
       "cadangkan",
-      "sauvegarde"
-    ],
+      "sauvegarde",
+      "백업"
+],
     "restore_data": [
       "restore data",
       "pulihkan data",
-      "restaurer"
-    ],
+      "restaurer",
+      "복구"
+],
     "data_plan": [
       "data plan",
       "paket data",
-      "forfait mobile"
-    ],
+      "forfait mobile",
+      "데이터요금제"
+],
     "roaming": [
       "roaming",
-      "jelajah data"
-    ],
+      "jelajah data",
+      "로밍"
+],
     "video_call": [
       "video call",
       "vc ",
-      "appel video"
-    ],
+      "appel video",
+      "영상통화"
+],
     "missed_call": [
       "missed call",
       "panggilan tak terjawab",
-      "appel manque"
-    ],
+      "appel manque",
+      "부재중전화"
+],
     "voicemail": [
       "voicemail",
       "pesan suara telepon",
-      "messagerie vocale"
-    ],
+      "messagerie vocale",
+      "음성사서함"
+],
     "quiet_hours": [
       "quiet hours",
       "jam tenang",
-      "heures calmes"
-    ],
+      "heures calmes",
+      "조용한시간"
+],
     "meeting_notes": [
       "meeting notes",
       "catatan rapat",
-      "notes reunion"
-    ],
+      "notes reunion",
+      "회의록"
+],
     "quick_reply": [
       "quick reply",
       "balasan cepat",
-      "reponse rapide"
-    ],
+      "reponse rapide",
+      "빠른답장"
+],
     "question": [
       "?",
       "can ",
@@ -1324,8 +1669,12 @@
       "bisa ",
       "apakah",
       "tu ",
-      "est-ce"
-    ]
+      "est-ce",
+      "뭐야",
+      "인가",
+      "야?",
+      "니"
+]
   },
   "languages": {
     "en": {
