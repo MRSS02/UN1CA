@@ -1,6 +1,7 @@
 system 0 0 755 capabilities=0x0
 system/bin 0 2000 751 capabilities=0x0
-system/app 0 0 755 capabilities=0x0
+system/app/HoneyBoard 0 0 755 capabilities=0x0
+system/app/HoneyBoard/HoneyBoard.apk 0 0 644 capabilities=0x0
 system/app/SmartManager_v6_DeviceSecurity_CN 0 0 755 capabilities=0x0
 system/app/SmartManager_v6_DeviceSecurity_CN/SmartManager_v6_DeviceSecurity_CN.apk 0 0 644 capabilities=0x0
 system/etc 0 0 755 capabilities=0x0
