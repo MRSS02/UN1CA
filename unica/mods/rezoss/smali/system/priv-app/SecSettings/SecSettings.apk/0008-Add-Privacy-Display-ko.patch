@@ -3,7 +3,7 @@ From: ssch71 <rezoss@local>
 Date: Mon, 27 Jul 2026 00:00:00 +0200
 Subject: [PATCH] Add Privacy Display apps Korean
 
-diff --git a/res/values/strings.xml b/res/values/strings.xml
+diff --git a/res/values-ko/strings.xml b/res/values/strings.xml
 index dc08e27..ed87e1b 100644
 --- a/res/values/strings.xml
 +++ b/res/values/strings.xml
@@ -21,7 +21,7 @@ index dc08e27..ed87e1b 100644
      <string name="pd_main_title">Unknown action</string>
      <string name="peak_refresh_rate_summary">Automatically raises the refresh rate up to %1$d Hz for some content. Increases battery usage.</string>
 
-diff --git a/res/values/strings.xml b/res/values/strings.xml
+diff --git a/res/values-ko/strings.xml b/res/values/strings.xml
 index ed87e1b..ac23910 100644
 --- a/res/values/strings.xml
 +++ b/res/values/strings.xml
