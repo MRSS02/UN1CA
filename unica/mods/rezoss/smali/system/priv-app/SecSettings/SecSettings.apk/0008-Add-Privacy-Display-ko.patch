@@ -3,31 +3,20 @@ From: ssch71 <rezoss@local>
 Date: Mon, 27 Jul 2026 00:00:00 +0200
 Subject: [PATCH] Add Privacy Display apps Korean
 
-diff --git a/res/values-ko/strings.xml b/res/values/strings.xml
-index dc08e27..ed87e1b 100644
---- a/res/values/strings.xml
-+++ b/res/values/strings.xml
-@@ -8087,6 +8087,12 @@ This may take up to 1 minute."</string>
-     <string name="path_password_eye_mask_visible">M2,4.27 L2,4.27 L4.54,1.73 L4.54,1.73 L4.54,1 L23,1 L23,23 L1,23 L1,4.27 Z</string>
-     <string name="path_password_strike_through">M3.27,4.27 L19.74,20.74</string>
-     <string name="pause_animation">Pause animation</string>
-+    <string name="rezoss_pd_extra_dim_summary">Make the screen even more difficult to view when Privacy display is on. This may affect normal viewing in addition to viewing from side angles.</string>
-+    <string name="rezoss_pd_extra_dim_title">Maximum privacy protection</string>
-+    <string name="rezoss_pd_fixed_description">Protect your privacy by making the screen less visible when viewed from a side angle.</string>
-+    <string name="rezoss_pd_main_summary">Limit screen visibility from side angles to protect your privacy.</string>
+--- a/res/values-ko/strings.xml
++++ b/res/values-ko/strings.xml
+@@ -3497,6 +3497,14 @@
+     <string name="password_must_not_contain_numbers_in_order">비밀번호에 %d개 이상의 연속된 숫자를 포함할 수 없습니다.</string>
+     <string name="password_toggle_content_description">비밀번호 표시</string>
+     <string name="passwords_and_autofill">비밀번호 및 자동 입력</string>
++    <string name="rezoss_pd_custom_apps_summary">Privacy display를 사용할 알림 앱을 선택하세요.</string>
++    <string name="rezoss_pd_custom_apps_title">앱</string>
++    <string name="rezoss_pd_extra_dim_summary">Privacy display가 켜져 있을 때 화면을 더 어둡게 만들어 보기 어렵게 합니다. 측면뿐 아니라 정면에서 보는 것에도 영향을 줄 수 있습니다.</string>
++    <string name="rezoss_pd_extra_dim_title">최대 프라이버시 보호</string>
++    <string name="rezoss_pd_fixed_description">측면 각도에서 화면이 잘 보이지 않도록 하여 프라이버시를 보호합니다.</string>
++    <string name="rezoss_pd_main_summary">측면 각도에서의 화면 가시성을 제한하여 프라이버시를 보호합니다.</string>
 +    <string name="rezoss_pd_main_title">Privacy display</string>
-+    <string name="rezoss_pd_turn_on_title">Turn on Privacy display</string>
-     <string name="pd_extra_dim_title">Unknown action</string>
-     <string name="pd_main_title">Unknown action</string>
-     <string name="peak_refresh_rate_summary">Automatically raises the refresh rate up to %1$d Hz for some content. Increases battery usage.</string>
-
-diff --git a/res/values-ko/strings.xml b/res/values/strings.xml
-index ed87e1b..ac23910 100644
---- a/res/values/strings.xml
-+++ b/res/values/strings.xml
-@@ -8087,3 +8087,5 @@
-+    <string name="rezoss_pd_custom_apps_summary">Choose notification apps that use Privacy display.</string>
-+    <string name="rezoss_pd_custom_apps_title">Apps</string>
-     <string name="rezoss_pd_extra_dim_summary">Make the screen even more difficult to view when Privacy display is on. This may affect normal viewing in addition to viewing from side angles.</string>
-     <string name="rezoss_pd_extra_dim_title">Maximum privacy protection</string>
-     <string name="rezoss_pd_fixed_description">Protect your privacy by making the screen less visible when viewed from a side angle.</string>
++    <string name="rezoss_pd_turn_on_title">Privacy display 켜기</string>
+     <string name="pd_extra_dim_title">알 수 없는 동작</string>
+     <string name="pd_main_title">알 수 없는 동작</string>
+     <string name="pen_setting_option">펜 모드</string>
