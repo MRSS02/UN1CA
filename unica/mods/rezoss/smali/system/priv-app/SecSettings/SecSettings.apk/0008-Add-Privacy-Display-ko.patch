@@ -1,0 +1,33 @@
+From 91b618d1dc0b75afe6f1f10e3ce5d6f3973ac007 Mon Sep 17 00:00:00 2001
+From: ssch71 <rezoss@local>
+Date: Mon, 27 Jul 2026 00:00:00 +0200
+Subject: [PATCH] Add Privacy Display apps Korean
+
+diff --git a/res/values/strings.xml b/res/values/strings.xml
+index dc08e27..ed87e1b 100644
+--- a/res/values/strings.xml
++++ b/res/values/strings.xml
+@@ -8087,6 +8087,12 @@ This may take up to 1 minute."</string>
+     <string name="path_password_eye_mask_visible">M2,4.27 L2,4.27 L4.54,1.73 L4.54,1.73 L4.54,1 L23,1 L23,23 L1,23 L1,4.27 Z</string>
+     <string name="path_password_strike_through">M3.27,4.27 L19.74,20.74</string>
+     <string name="pause_animation">Pause animation</string>
++    <string name="rezoss_pd_extra_dim_summary">Make the screen even more difficult to view when Privacy display is on. This may affect normal viewing in addition to viewing from side angles.</string>
++    <string name="rezoss_pd_extra_dim_title">Maximum privacy protection</string>
++    <string name="rezoss_pd_fixed_description">Protect your privacy by making the screen less visible when viewed from a side angle.</string>
++    <string name="rezoss_pd_main_summary">Limit screen visibility from side angles to protect your privacy.</string>
++    <string name="rezoss_pd_main_title">Privacy display</string>
++    <string name="rezoss_pd_turn_on_title">Turn on Privacy display</string>
+     <string name="pd_extra_dim_title">Unknown action</string>
+     <string name="pd_main_title">Unknown action</string>
+     <string name="peak_refresh_rate_summary">Automatically raises the refresh rate up to %1$d Hz for some content. Increases battery usage.</string>
+
+diff --git a/res/values/strings.xml b/res/values/strings.xml
+index ed87e1b..ac23910 100644
+--- a/res/values/strings.xml
++++ b/res/values/strings.xml
+@@ -8087,3 +8087,5 @@
++    <string name="rezoss_pd_custom_apps_summary">Choose notification apps that use Privacy display.</string>
++    <string name="rezoss_pd_custom_apps_title">Apps</string>
+     <string name="rezoss_pd_extra_dim_summary">Make the screen even more difficult to view when Privacy display is on. This may affect normal viewing in addition to viewing from side angles.</string>
+     <string name="rezoss_pd_extra_dim_title">Maximum privacy protection</string>
+     <string name="rezoss_pd_fixed_description">Protect your privacy by making the screen less visible when viewed from a side angle.</string>
