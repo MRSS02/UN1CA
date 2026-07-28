@@ -1,4 +1,4 @@
-If [ ! "$(GET_PROP "system" "ro.unica.version")" ]; then
+if [ ! "$(GET_PROP "system" "ro.unica.version")" ]; then
     SET_PROP "system" "ro.unica.version" "$ROM_VERSION"
 fi
 
