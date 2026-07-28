@@ -1,4 +1,4 @@
-if [ ! "$(GET_PROP "system" "ro.unica.version")" ]; then
+If [ ! "$(GET_PROP "system" "ro.unica.version")" ]; then
     SET_PROP "system" "ro.unica.version" "$ROM_VERSION"
 fi
 
@@ -146,9 +146,9 @@ SMALI_PATCH "system" "system/priv-app/SecSettings/SecSettings.apk" \
 
 # Add UN1CA Settings SearchIndexDataProvider(s)
 LOG "- Patching Settings search index providers in /system/system/priv-app/SecSettings.apk"
+# shellcheck disable=SC2016
 SEARCH_INDEX_RESOURCES="$(
     find "$APKTOOL_DIR/system/priv-app/SecSettings/SecSettings.apk" \
-# shellcheck disable=SC2016
         -path '*/com/android/settings/search/SearchFeatureProviderImpl$$ExternalSyntheticLambda0.smali' \
         -print -quit
 )"
