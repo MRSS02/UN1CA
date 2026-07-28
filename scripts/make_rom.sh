@@ -8,7 +8,7 @@ source "$SRC_DIR/scripts/utils/build_utils.sh" || exit 1
 FORCE=false
 BUILD_ROM=false
 BUILD_TARGET_FILES=true
-BUILD_FLASHABLE_ZIP=true
+BUILD_FLASHABLE_ZIP=false
 BUILD_DIRECT_FLASHABLE_ZIP=false
 
 START_TIME="$(date +%s)"
@@ -51,6 +51,7 @@ PREPARE_SCRIPT()
     done
 }
 
+# shellcheck disable=SC2317,SC2329
 PRINT_BUILD_OUTCOME()
 {
     local EXIT_CODE="$?"

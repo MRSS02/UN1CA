@@ -44,9 +44,9 @@ prebuilts/samsung/pa2qxxx/system/priv-app/MediaSearch/MediaSearch.apk
 prebuilts/samsung/pa2qxxx/system/priv-app/SamsungSmartSuggestions/SamsungSmartSuggestions.apk
 prebuilts/samsung/pa2qxxx/system/priv-app/SemanticSearchCore/SemanticSearchCore.apk
 prebuilts/samsung/pa2qxxx/system/priv-app/wallpaper-res/wallpaper-res.apk
-unica/mods/rezoss/system/app/HoneyBoard/HoneyBoard.apk
 unica/mods/rezoss/system/priv-app/SamsungIntelliVoiceServices/SamsungIntelliVoiceServices.apk
 unica/mods/rezoss/system/priv-app/SamsungSmartSuggestions/SamsungSmartSuggestions.apk
+unica/mods/rezoss/system/app/HoneyBoard/HoneyBoard.apk
 
 # Cert
 security/unica_ota.x509.pem
