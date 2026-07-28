@@ -148,6 +148,7 @@ SMALI_PATCH "system" "system/priv-app/SecSettings/SecSettings.apk" \
 LOG "- Patching Settings search index providers in /system/system/priv-app/SecSettings.apk"
 SEARCH_INDEX_RESOURCES="$(
     find "$APKTOOL_DIR/system/priv-app/SecSettings/SecSettings.apk" \
+# shellcheck disable=SC2016
         -path '*/com/android/settings/search/SearchFeatureProviderImpl$$ExternalSyntheticLambda0.smali' \
         -print -quit
 )"
