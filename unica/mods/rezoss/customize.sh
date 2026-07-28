@@ -277,7 +277,7 @@ _REZOSS_SET_VENDOR_CONFIG_DIR_METADATA()
     fi
 
     while IFS= read -r FILE; do
-        REL="${FILE#$WORK_DIR/vendor/}"
+        REL="${FILE#"$WORK_DIR"/vendor/}"
         if [ -d "$FILE" ]; then
             SET_METADATA "vendor" "$REL" 0 2000 755 "u:object_r:vendor_configs_file:s0"
         else
@@ -684,10 +684,7 @@ ADD_TO_WORK_DIR "m3qxxx" "vendor" "etc/saiv/image_understanding/db/fm" 0 2000 75
 ADD_TO_WORK_DIR "m3qxxx" "vendor" "etc/saiv/image_understanding/db/doc_rectifier" 0 2000 755 "u:object_r:vendor_configs_file:s0"
 ADD_TO_WORK_DIR "m3qxxx" "vendor" "etc/saiv/image_understanding/db/ss_magnet" 0 2000 755 "u:object_r:vendor_configs_file:s0"
 ADD_TO_WORK_DIR "m3qxxx" "vendor" "etc/midas_enhancedocumentscan" 0 2000 755 "u:object_r:vendor_configs_file:s0"
-for f in \
-    "etc/saiv/image_understanding/db/fm"; do
-    _REZOSS_SET_VENDOR_CONFIG_DIR_METADATA "$f"
-done
+_REZOSS_SET_VENDOR_CONFIG_DIR_METADATA "etc/saiv/image_understanding/db/fm"
 
 # Do not install the S26U compressed-RAW stack on dm3q. These libraries execute
 # inside the S23U camera-provider process and can stall its Night capture graph.
