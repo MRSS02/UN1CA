@@ -1,7 +1,7 @@
 From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
-From: Rezoss <rezoss@local>
+From: ssch71 <ssch71@local>
 Date: Thu, 21 May 2026 00:00:00 +0200
-Subject: [PATCH] Add doze auto-brightness arrays
+Subject: [PATCH] Add doze auto-brightness arrays (S23 tuned)
 
 ---
  res/values/arrays.xml | 23 +++++++++++++++++++++++
@@ -15,26 +15,26 @@ diff --git a/res/values/arrays.xml b/res/values/arrays.xml
          <item>510</item>
      </integer-array>
 +    <integer-array name="config_autoBrightnessDisplayValuesNits_doze">
++        <item>1</item>
 +        <item>2</item>
-+        <item>5</item>
-+        <item>12</item>
-+        <item>60</item>
-+        <item>64</item>
-+        <item>82</item>
-+        <item>139</item>
-+        <item>198</item>
-+        <item>331</item>
-+        <item>490</item>
++        <item>4</item>
++        <item>8</item>
++        <item>15</item>
++        <item>28</item>
++        <item>45</item>
++        <item>70</item>
++        <item>110</item>
++        <item>170</item>
 +    </integer-array>
 +    <integer-array name="config_autoBrightnessLevels_doze">
-+        <item>1</item>
-+        <item>10</item>
-+        <item>30</item>
-+        <item>50</item>
-+        <item>100</item>
-+        <item>500</item>
-+        <item>1000</item>
-+        <item>2000</item>
++        <item>3</item>
++        <item>15</item>
++        <item>40</item>
++        <item>80</item>
++        <item>150</item>
++        <item>400</item>
++        <item>800</item>
++        <item>1600</item>
 +        <item>3000</item>
 +    </integer-array>
  </resources>
