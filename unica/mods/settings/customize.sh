@@ -1,13 +1,17 @@
+#!/usr/bin/env bash
+
 if [ ! "$(GET_PROP "system" "ro.unica.version")" ]; then
     SET_PROP "system" "ro.unica.version" "$ROM_VERSION"
 fi
 
+# Instrumentation.smali 패치 (One UI 8.x / 최신 안드로이드 시그니처 고려)
 SMALI_PATCH "system" "system/framework/framework.jar" \
     "smali/android/app/Instrumentation.smali" "replace" \
     'newApplication(Ljava/lang/Class;Landroid/content/Context;)Landroid/app/Application;' \
     'invoke-virtual {p0, p1}, Landroid/app/Application;->attach(Landroid/content/Context;)V' \
     '    invoke-virtual {p0, p1}, Landroid/app/Application;->attach(Landroid/content/Context;)V\n\n    invoke-static {p1}, Lio/mesalabs/unica/SamsungPropsHooks;->init(Landroid/content/Context;)V' \
     > /dev/null
+
 SMALI_PATCH "system" "system/framework/framework.jar" \
     "smali/android/app/Instrumentation.smali" "replace" \
     'newApplication(Ljava/lang/ClassLoader;Ljava/lang/String;Landroid/content/Context;)Landroid/app/Application;' \
@@ -146,6 +150,7 @@ SMALI_PATCH "system" "system/priv-app/SecSettings/SecSettings.apk" \
 
 # Add UN1CA Settings SearchIndexDataProvider(s)
 LOG "- Patching Settings search index providers in /system/system/priv-app/SecSettings.apk"
+# shellcheck disable=SC2016
 SEARCH_INDEX_RESOURCES="$(
     find "$APKTOOL_DIR/system/priv-app/SecSettings/SecSettings.apk" \
         -path '*/com/android/settings/search/SearchFeatureProviderImpl$$ExternalSyntheticLambda0.smali' \
@@ -155,7 +160,7 @@ if [ ! "$SEARCH_INDEX_RESOURCES" ]; then
     LOGE "Settings search provider registry not found in /system/system/priv-app/SecSettings.apk"
     return 1
 fi
-SEARCH_INDEX_RESOURCES_SMALI="${SEARCH_INDEX_RESOURCES#$APKTOOL_DIR/system/priv-app/SecSettings/SecSettings.apk/}"
+SEARCH_INDEX_RESOURCES_SMALI="${SEARCH_INDEX_RESOURCES#"$APKTOOL_DIR"/system/priv-app/SecSettings/SecSettings.apk/}"
 
 ADD_UNICA_SETTINGS_SEARCH_INDEX_DATA_PROVIDER()
 {
@@ -197,7 +202,7 @@ if [ ! "$TOP_LEVEL_KEYS_COLLECTOR" ]; then
     LOGE "TopLevelKeysCollector smali not found in /system/system/priv-app/SecSettingsIntelligence.apk"
     return 1
 fi
-TOP_LEVEL_KEYS_COLLECTOR_SMALI="${TOP_LEVEL_KEYS_COLLECTOR#$APKTOOL_DIR/system/priv-app/SecSettingsIntelligence/SecSettingsIntelligence.apk/}"
+TOP_LEVEL_KEYS_COLLECTOR_SMALI="${TOP_LEVEL_KEYS_COLLECTOR#"$APKTOOL_DIR"/system/priv-app/SecSettingsIntelligence/SecSettingsIntelligence.apk/}"
 
 if ! grep -q '"top_level_unica"' "$TOP_LEVEL_KEYS_COLLECTOR"; then
     SMALI_PATCH "system" "system/priv-app/SecSettingsIntelligence/SecSettingsIntelligence.apk" \
