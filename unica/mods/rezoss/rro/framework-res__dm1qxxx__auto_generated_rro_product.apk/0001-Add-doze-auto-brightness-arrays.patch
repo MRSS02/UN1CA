@@ -17,24 +17,24 @@ diff --git a/res/values/arrays.xml b/res/values/arrays.xml
 +    <integer-array name="config_autoBrightnessDisplayValuesNits_doze">
 +        <item>1</item>
 +        <item>2</item>
-+        <item>4</item>
++        <item>3</item>
++        <item>5</item>
 +        <item>8</item>
-+        <item>15</item>
-+        <item>28</item>
-+        <item>45</item>
-+        <item>70</item>
-+        <item>110</item>
-+        <item>170</item>
++        <item>13</item>
++        <item>21</item>
++        <item>34</item>
++        <item>55</item>
++        <item>90</item>
 +    </integer-array>
 +    <integer-array name="config_autoBrightnessLevels_doze">
-+        <item>3</item>
-+        <item>15</item>
-+        <item>40</item>
-+        <item>80</item>
-+        <item>150</item>
-+        <item>400</item>
-+        <item>800</item>
-+        <item>1600</item>
++        <item>5</item>
++        <item>20</item>
++        <item>50</item>
++        <item>100</item>
++        <item>200</item>
++        <item>500</item>
++        <item>1000</item>
++        <item>2000</item>
 +        <item>3000</item>
 +    </integer-array>
  </resources>
