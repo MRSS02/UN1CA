@@ -7,7 +7,7 @@ LOG_STEP_IN "- ssch71 experimental mods"
 #ADD_TO_WORK_DIR "$MODPATH" "system" \
 #    "system/priv-app/Collection" 0 0 755 "u:object_r:system_file:s0"
 #ADD_TO_WORK_DIR "$MODPATH" "system" \
-    "system/priv-app/Collection/Collection.apk" 0 0 644 "u:object_r:system_file:s0"
+#    "system/priv-app/Collection/Collection.apk" 0 0 644 "u:object_r:system_file:s0"
 
 #LOG "- Adding SocialComposer app"
 #ADD_TO_WORK_DIR "$MODPATH" "system" \
