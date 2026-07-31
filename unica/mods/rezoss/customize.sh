@@ -192,9 +192,6 @@ SET_FLOATING_FEATURE_CONFIG "SEC_FLOATING_FEATURE_MMFW_SUPPORT_HDR2SDR_MAX_8K" "
 SET_FLOATING_FEATURE_CONFIG "SEC_FLOATING_FEATURE_MMFW_SUPPORT_HIERARCHICAL_B_ENCODING" "TRUE"
 SET_FLOATING_FEATURE_CONFIG "SEC_FLOATING_FEATURE_MMFW_SUPPORT_LONGEXPOSURE_EFFECT_10BIT" "TRUE"
 SET_FLOATING_FEATURE_CONFIG "SEC_FLOATING_FEATURE_MMFW_SUPPORT_PHOTOHDR" "TRUE"
-# Keep foundational_segmentation disabled on dm3q; the S26U FM engine crashes
-# PhotoEditor_AIFull on the S23U SNAP/vendor stack during contour/lasso execution.
-SET_FLOATING_FEATURE_CONFIG "SEC_FLOATING_FEATURE_VIDEO_CONFIG_VIDEO_CLIPPING_MODE" "NPU,unifiedclipper"
 
 # =============================================================================
 # Floating Features - Galaxy AI / Framework / Search
@@ -771,8 +768,8 @@ ADD_TO_WORK_DIR "dm3qxxx" "system" "system/app/VisionModel-Stub/VisionModel-Stub
 # =============================================================================
 # Enable built-in spoof to use Ambient Weather Wallpaper
 LOG "- Patch DressRoom Weather wallpaper AICore gate"
-APPLY_PATCH "system" "system/priv-app/DressRoom/DressRoom.apk" \
-    "$MODPATH/dressroom/DressRoom.apk/0001-Bypass-AICore-weather-feature-check.patch"
+#APPLY_PATCH "system" "system/priv-app/DressRoom/DressRoom.apk" \
+#    "$MODPATH/dressroom/DressRoom.apk/0001-Bypass-AICore-weather-feature-check.patch"
 
 LOG "- Patch VisualCloudCore Galaxy Store model check"
 APPLY_PATCH "system" "system/app/VisualCloudCore/VisualCloudCore.apk" \
