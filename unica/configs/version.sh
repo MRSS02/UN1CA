@@ -10,7 +10,7 @@ VERSION_PATCH=0
 #
 # Version name
 # shellcheck disable=SC2034 # used by scripts that source this file
-ROM_VERSION="OneUI8.5_${VERSION_MAJOR}.${VERSION_MINOR}.${VERSION_PATCH}_UnOfficial_by_Rezoss"
+ROM_VERSION="OneUI8.5_${VERSION_MAJOR}.${VERSION_MINOR}.${VERSION_PATCH}_UnOfficial_by_ssch71"
 # Append "+" to version name if commits have been added since the last tag
 # LATEST_TAG="$(git describe --tags --abbrev=0 2> /dev/null)"
 # if [ "$LATEST_TAG" ]; then
