@@ -3,7 +3,7 @@ AUTHOR Rezoss
 diff --git a/smali_classes2/com/android/server/notification/NmRune.smali b/smali_classes2/com/android/server/notification/NmRune.smali
 --- a/smali_classes2/com/android/server/notification/NmRune.smali
 +++ b/smali_classes2/com/android/server/notification/NmRune.smali
-@@ -173,6 +173,41 @@
+@@ -173,6 +173,42 @@
 
      if-nez v4, :cond_2
 
