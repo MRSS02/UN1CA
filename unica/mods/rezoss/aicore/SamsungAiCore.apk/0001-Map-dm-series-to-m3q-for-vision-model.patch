@@ -3,7 +3,7 @@ AUTHOR Rezoss
 diff --git a/smali/com/samsung/android/aicore/VersionConfigLoader.smali b/smali/com/samsung/android/aicore/VersionConfigLoader.smali
 --- a/smali/com/samsung/android/aicore/VersionConfigLoader.smali
 +++ b/smali/com/samsung/android/aicore/VersionConfigLoader.smali
-@@ -55,8 +55,50 @@
+@@ -55,8 +55,52 @@
      invoke-static {v0, v1}, Landroid/os/SemSystemProperties;->get(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
      move-result-object v0
@@ -27,6 +27,11 @@ diff --git a/smali/com/samsung/android/aicore/VersionConfigLoader.smali b/smali/
 +    const-string v1, "dm3q"
 +
 +    invoke-virtual {v0, v1}, Ljava/lang/String;->startsWith(Ljava/lang/String;)Z
++
++    move-result v1
++
++    if-nez v1, :cond_force_m3q
++
 +    const-string v1, "b5q"
 +
 +    invoke-virtual {v0, v1}, Ljava/lang/String;->startsWith(Ljava/lang/String;)Z
