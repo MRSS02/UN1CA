@@ -42,6 +42,7 @@
     "com.samsung.vvm",
     "com.sds.teams",
     "com.google.android.apps.dynamite"
+    "nu.gpu.nagram"
   ],
   "except_scenarios": []
 }
