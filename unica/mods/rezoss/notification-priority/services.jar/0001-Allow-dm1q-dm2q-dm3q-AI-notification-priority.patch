@@ -31,7 +31,7 @@ diff --git a/smali_classes2/com/android/server/notification/NmRune.smali b/smali
 +
 +    if-nez v4, :cond_2
 +
-+    const-string/jumbo v4, "dm1q"
++    const-string/jumbo v4, "b5q"
 +
 +    invoke-virtual {v2, v4}, Ljava/lang/String;->startsWith(Ljava/lang/String;)Z
 +
@@ -39,7 +39,7 @@ diff --git a/smali_classes2/com/android/server/notification/NmRune.smali b/smali
 +
 +    if-nez v4, :cond_2
 +
-+    const-string/jumbo v4, "dm2q"
++    const-string/jumbo v4, "q5q"
 +
 +    invoke-virtual {v2, v4}, Ljava/lang/String;->startsWith(Ljava/lang/String;)Z
 +
