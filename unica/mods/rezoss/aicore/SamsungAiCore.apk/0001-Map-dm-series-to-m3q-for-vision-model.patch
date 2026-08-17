@@ -27,7 +27,7 @@ diff --git a/smali/com/samsung/android/aicore/VersionConfigLoader.smali b/smali/
 +    const-string v1, "dm3q"
 +
 +    invoke-virtual {v0, v1}, Ljava/lang/String;->startsWith(Ljava/lang/String;)Z
-+    const-string v1, "b1q"
++    const-string v1, "b5q"
 +
 +    invoke-virtual {v0, v1}, Ljava/lang/String;->startsWith(Ljava/lang/String;)Z
 +
@@ -35,7 +35,7 @@ diff --git a/smali/com/samsung/android/aicore/VersionConfigLoader.smali b/smali/
 +
 +    if-nez v1, :cond_force_m3q
 +
-+    const-string v1, "q2q"
++    const-string v1, "q5q"
 +
 +    invoke-virtual {v0, v1}, Ljava/lang/String;->startsWith(Ljava/lang/String;)Z
 +
