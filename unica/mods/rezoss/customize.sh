@@ -760,8 +760,8 @@ ADD_TO_WORK_DIR "dm3qxxx" "system" "system/app/VisionModel-Stub/VisionModel-Stub
 # =============================================================================
 # Enable built-in spoof to use Ambient Weather Wallpaper
 LOG "- Patch DressRoom Weather wallpaper AICore gate"
-#APPLY_PATCH "system" "system/priv-app/DressRoom/DressRoom.apk" \
-#    "$MODPATH/dressroom/DressRoom.apk/0001-Bypass-AICore-weather-feature-check.patch"
+APPLY_PATCH "system" "system/priv-app/DressRoom/DressRoom.apk" \
+    "$MODPATH/dressroom/DressRoom.apk/0001-Bypass-AICore-weather-feature-check.patch"
 
 LOG "- Patch VisualCloudCore Galaxy Store model check"
 APPLY_PATCH "system" "system/app/VisualCloudCore/VisualCloudCore.apk" \
