@@ -134,7 +134,7 @@ jobs:
       - name: Build ROM
         run: ./scripts/make_rom.sh
 
-      - name: Upload to PixelDrain
+      - name: Upload to GoFile
         run: |
           ZIP_FILE=$(find out -type f -name "*sign_FZG1.zip" | head -n 1)
 
@@ -143,21 +143,18 @@ jobs:
             exit 1
           fi
 
+          sleep 2
+
           echo "Found file: $ZIP_FILE"
-          echo "MD5:" && md5sum "$ZIP_FILE"
-          echo "SHA256:" && sha256sum "$ZIP_FILE"
 
-          echo "Starting upload to PixelDrain..."
-          # API 키가 있을 경우 (Secrets 등록 시): -u ":${{ secrets.PIXELDRAIN_API_KEY }}" 추가
-          RESPONSE=$(curl -s -F "file=@$ZIP_FILE" https://pixeldrain.com/api/file)
+          echo "MD5:"
+          md5sum "$ZIP_FILE"
 
-          FILE_ID=$(echo "$RESPONSE" | jq -r '.id')
-          
-          if [ "$FILE_ID" != "null" ] && [ -n "$FILE_ID" ]; then
-            echo "Uploaded successfully!"
-            echo "Download link: https://pixeldrain.com/u/$FILE_ID"
-          else
-            echo "Upload failed! Response:"
-            echo "$RESPONSE"
-            exit 1
-          fi
+          echo "SHA256:"
+          sha256sum "$ZIP_FILE"
+
+          echo "Starting upload to GoFile..."
+          RESPONSE=$(curl -s -F "file=@$ZIP_FILE" -F "token=${{ secrets.GOFILE_TOKEN }}" -F "folderId=${{ secrets.GOFILE_FOLDER_ID }}" "https://upload-eu-par.gofile.io/uploadFile")
+
+          echo "Uploaded successfully! Download link:"
+          echo "$RESPONSE" | jq -r '.data.downloadPage'
