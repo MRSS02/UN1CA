@@ -53,4 +53,5 @@ system/priv-app/SPPPushClient
 system/priv-app/SamsungMagnifier3
 system/priv-app/SwiftkeyIme
 system/priv-app/SwiftkeySetting
+system/priv-app/GameOptimizeService
 "
