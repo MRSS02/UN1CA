@@ -55,3 +55,9 @@ system/priv-app/SwiftkeyIme
 system/priv-app/SwiftkeySetting
 system/priv-app/GameOptimizeService
 "
+
+PRODUCT_DEBLOAT="
+app/BardShell
+app/Chrome
+"
+
