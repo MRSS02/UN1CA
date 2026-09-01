@@ -7,6 +7,7 @@ BACKPORT_SF_PROPS()
     fi
 
     if [ ! -f "$FILE" ]; then
+        echo "Error in /unica/patches/legacy"
         ABORT "File not found: ${FILE//$SRC_DIR\//}"
     fi
 
