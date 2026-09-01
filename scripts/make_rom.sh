@@ -131,7 +131,7 @@ if $BUILD_ROM; then
     fi
     if [ -d "$SRC_DIR/unica/patches" ]; then
         LOG_STEP_IN true "Applying ROM patches"
-        "$SRC_DIR/scripts/internal/apply_modules.sh" "$SRC_DIR/unica/patches" || exit 1
+        "$SRC_DIR/scripts/internal/apply_modules.sh" "$SRC_DIR/unica/patches" || echo "there was an error during patches, but continuining anyway for debug purposes!"
         LOG_STEP_OUT
     fi
 
