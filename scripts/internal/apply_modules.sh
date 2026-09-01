@@ -130,6 +130,7 @@ if [ "$#" != "1" ]; then
     exit 1
 elif [ ! -d "$1" ]; then
     LOGE "Folder not found: ${1//$SRC_DIR\//}"
+    echo "Something bad happened"
     exit 1
 fi
 
