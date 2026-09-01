@@ -350,6 +350,7 @@ system/priv-app/TService
 
 #I don't need
 SYSTEM_DEBLOAT+="
+system/app/PartnerBookmarksProvider
 system/app/BookmarkProvider
 system/app/Fast
 system/app/KidsHome_Installer
