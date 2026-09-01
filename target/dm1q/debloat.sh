@@ -350,6 +350,8 @@ system/priv-app/TService
 
 #I don't need
 SYSTEM_DEBLOAT+="
+system/priv-app/OMCAgent5
+system/app/BBCAgent
 system/app/PartnerBookmarksProvider
 system/app/BookmarkProvider
 system/app/Fast
