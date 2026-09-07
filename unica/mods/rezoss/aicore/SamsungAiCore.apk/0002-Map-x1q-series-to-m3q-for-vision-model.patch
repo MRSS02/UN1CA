@@ -3,7 +3,7 @@ AUTHOR ssch71
 diff --git a/smali/com/samsung/android/aicore/VersionConfigLoader.smali b/smali/com/samsung/android/aicore/VersionConfigLoader.smali
 --- a/smali/com/samsung/android/aicore/VersionConfigLoader.smali
 +++ b/smali/com/samsung/android/aicore/VersionConfigLoader.smali
-@@ -55,6 +55,53 @@
+@@ -55,20 +55,63 @@
  .method public loadConfig()V
      .registers 2
      .annotation system Ldalvik/annotation/Signature;
