@@ -64,3 +64,51 @@ diff --git a/smali/com/samsung/android/aicore/VersionConfigLoader.smali b/smali/
 
     const-string v1, "dm1q"
 
+    invoke-virtual {v0, v1}, Ljava/lang/String;->startsWith(Ljava/lang/String;)Z
+
+    move-result v1
+
+    if-ne-z v1, :cond_force_m3q
+
+    const-string v1, "dm2q"
+
+    invoke-virtual {v0, v1}, Ljava/lang/String;->startsWith(Ljava/lang/String;)Z
+
+    move-result v1
+
+    if-ne-z v1, :cond_force_m3q
+
+    const-string v1, "dm3q"
+
+    invoke-virtual {v0, v1}, Ljava/lang/String;->startsWith(Ljava/lang/String;)Z
+
+    move-result v1
+
+    if-ne-z v1, :cond_force_m3q
+
+    const-string v1, "b5q"
+
+    invoke-virtual {v0, v1}, Ljava/lang/String;->startsWith(Ljava/lang/String;)Z
+
+    move-result v1
+
+    if-ne-z v1, :cond_force_m3q
+
+    const-string v1, "q5q"
+
+    invoke-virtual {v0, v1}, Ljava/lang/String;->startsWith(Ljava/lang/String;)Z
+
+    move-result v1
+
+    if-ne-z v1, :cond_force_m3q
+
+    goto :goto_device_name
+
+:cond_force_m3q
+    const-string v0, "m3q"
+
+:goto_device_name
+     iput-object v0, p0, Lcom/samsung/android/aicore/VersionConfigLoader;->mDeviceName:Ljava/lang/String;
+
+     return-void
+ .end method
