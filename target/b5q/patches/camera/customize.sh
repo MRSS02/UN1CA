@@ -38,6 +38,11 @@ system/lib64/libswuwdc.arcsoft.so
 
 for blob in $BLOBS_LIST
 do
+    SRC_PATH="out/fw/${TARGET_FIRMWARE}/system/${blob}"
+    if [ ! -f "$SRC_PATH" ]; then
+        echo "WARN: missing $blob, skipping"
+        continue
+    fi
     if [[ "$blob" == *.txt ]]; then
         ADD_TO_WORK_DIR "$TARGET_FIRMWARE" "system" "$blob" 0 0 644 "u:object_r:system_file:s0"
     else
