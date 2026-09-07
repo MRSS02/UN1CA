@@ -9,7 +9,6 @@ system/lib64/libDualCamBokehCapture.camera.samsung.so
 system/lib64/libEventDetector.camera.samsung.so
 system/lib64/libFace_Landmark_API.camera.samsung.so
 system/lib64/libFace_Landmark_Engine.camera.samsung.so
-system/lib64/libFacialAttributeDetection.arcsoft.so
 system/lib64/libFacialBasedSelfieCorrection.camera.samsung.so
 system/lib64/libFood.camera.samsung.so
 system/lib64/libLocalTM_pcc.camera.samsung.so
