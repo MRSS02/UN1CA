@@ -3,30 +3,30 @@ AUTHOR Rezoss
 diff --git a/smali/com/samsung/android/aicore/VersionConfigLoader.smali b/smali/com/samsung/android/aicore/VersionConfigLoader.smali
 --- a/smali/com/samsung/android/aicore/VersionConfigLoader.smali
 +++ b/smali/com/samsung/android/aicore/VersionConfigLoader.smali
-@@ -55,20 +55,63 @@
+@@ -55,14 +55,58 @@
  .method public loadConfig()V
      .registers 2
      .annotation system Ldalvik/annotation/Signature;
          value = "()V"
      .end annotation
- 
+
      .locals 2
- 
+
      const-string v0, "ro.product.vendor.device"
- 
+
      const-string v1, ""
- 
+
      invoke-static {v0, v1}, Landroid/os/SemSystemProperties;->get(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
- 
+
      move-result-object v0
- 
+
 +    const-string v1, "dm1q"
 +
 +    invoke-virtual {v0, v1}, Ljava/lang/String;->startsWith(Ljava/lang/String;)Z
 +
 +    move-result v1
 +
-+    if-eqz v1, :cond_force_m3q
++    if-ne-z v1, :cond_force_m3q
 +
 +    const-string v1, "dm2q"
 +
@@ -34,7 +34,7 @@ diff --git a/smali/com/samsung/android/aicore/VersionConfigLoader.smali b/smali/
 +
 +    move-result v1
 +
-+    if-eqz v1, :cond_force_m3q
++    if-ne-z v1, :cond_force_m3q
 +
 +    const-string v1, "dm3q"
 +
@@ -42,7 +42,7 @@ diff --git a/smali/com/samsung/android/aicore/VersionConfigLoader.smali b/smali/
 +
 +    move-result v1
 +
-+    if-eqz v1, :cond_force_m3q
++    if-ne-z v1, :cond_force_m3q
 +
 +    const-string v1, "b5q"
 +
@@ -50,7 +50,7 @@ diff --git a/smali/com/samsung/android/aicore/VersionConfigLoader.smali b/smali/
 +
 +    move-result v1
 +
-+    if-eqz v1, :cond_force_m3q
++    if-ne-z v1, :cond_force_m3q
 +
 +    const-string v1, "q5q"
 +
@@ -58,7 +58,7 @@ diff --git a/smali/com/samsung/android/aicore/VersionConfigLoader.smali b/smali/
 +
 +    move-result v1
 +
-+    if-eqz v1, :cond_force_m3q
++    if-ne-z v1, :cond_force_m3q
 +
 +    goto :goto_device_name
 +
