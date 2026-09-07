@@ -3,18 +3,21 @@ ADD_TO_WORK_DIR "a73xqxx" "system" "system/etc/vintf/manifest.xml" 0 0 644 "u:ob
 LOG_STEP_OUT
 
 LOG_STEP_IN "- Fixing vintf manifest"
-sed -i 's/manifest version="8\.0"/manifest version="9.0"/' "$WORK_DIR/system/system/etc/vintf/manifest.xml"
-sed -i 's/manifest version="8\.0"/manifest version="9.0"/' "$WORK_DIR/system/system/system_ext/etc/vintf/manifest.xml"
+[ -f "$WORK_DIR/system/system/etc/vintf/manifest.xml" ] && \
+    sed -i 's/manifest version="8\.0"/manifest version="9.0"/' "$WORK_DIR/system/system/etc/vintf/manifest.xml"
+
+[ -f "$WORK_DIR/system/system/system_ext/etc/vintf/manifest.xml" ] && \
+    sed -i 's/manifest version="8\.0"/manifest version="9.0"/' "$WORK_DIR/system/system/system_ext/etc/vintf/manifest.xml"
 LOG_STEP_OUT
 
 if [[ "$TARGET_CODENAME" == "x1q" || "$TARGET_CODENAME" == "y2q" || "$TARGET_CODENAME" == "z3q" ]]; then
     ADD_TO_WORK_DIR "$TARGET_FIRMWARE" "system" "system/priv-app/LedBackCoverAppHubble/LedBackCoverAppHubble.apk" 0 0 644 "u:object_r:system_file:s0"
     ADD_TO_WORK_DIR "$TARGET_FIRMWARE" "system" "system/etc/permissions/privapp-permissions-com.samsung.android.app.ledbackcover.xml" 0 0 644 "u:object_r:system_file:s0"
 fi
-LOG_STEP_OUT
 
 DELETE_FROM_WORK_DIR "system" "system/etc/permissions/com.sec.feature.cover.clearcameraviewcover.xml"
 DELETE_FROM_WORK_DIR "system" "system/etc/permissions/com.sec.feature.cover.flip.xml"
+
 LOG_STEP_IN "- Add stock system features"
 ADD_TO_WORK_DIR "$TARGET_FIRMWARE" "system" "system/etc/permissions/com.sec.feature.cover.clearsideviewcover.xml" 0 0 644 "u:object_r:system_file:s0"
 LOG_STEP_OUT
