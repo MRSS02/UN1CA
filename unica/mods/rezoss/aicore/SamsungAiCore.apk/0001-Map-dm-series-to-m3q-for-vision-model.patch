@@ -42,5 +42,3 @@ diff --git a/smali/com/samsung/android/aicore/VersionConfigLoader.smali b/smali/
 
      return-void
  .end method
-     return-void
- .end method
