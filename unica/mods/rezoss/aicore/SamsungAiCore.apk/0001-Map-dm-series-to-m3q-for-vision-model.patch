@@ -3,11 +3,23 @@ AUTHOR Rezoss
 diff --git a/smali/com/samsung/android/aicore/VersionConfigLoader.smali b/smali/com/samsung/android/aicore/VersionConfigLoader.smali
 --- a/smali/com/samsung/android/aicore/VersionConfigLoader.smali
 +++ b/smali/com/samsung/android/aicore/VersionConfigLoader.smali
-@@ -55,8 +55,38 @@
+@@ -55,20 +55,66 @@
+ .method public loadConfig()V
+     .registers 2
+     .annotation system Ldalvik/annotation/Signature;
+         value = "()V"
+     .end annotation
+ 
+     .locals 2
+ 
+     const-string v0, "ro.product.vendor.device"
+ 
+     const-string v1, ""
+ 
      invoke-static {v0, v1}, Landroid/os/SemSystemProperties;->get(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
-
+ 
      move-result-object v0
-
+ 
 +    const-string v1, "dm1q"
 +
 +    invoke-virtual {v0, v1}, Ljava/lang/String;->startsWith(Ljava/lang/String;)Z
@@ -32,13 +44,29 @@ diff --git a/smali/com/samsung/android/aicore/VersionConfigLoader.smali b/smali/
 +
 +    if-nez v1, :cond_force_m3q
 +
++    const-string v1, "b5q"
++
++    invoke-virtual {v0, v1}, Ljava/lang/String;->startsWith(Ljava/lang/String;)Z
++
++    move-result v1
++
++    if-nez v1, :cond_force_m3q
++
++    const-string v1, "q5q"
++
++    invoke-virtual {v0, v1}, Ljava/lang/String;->startsWith(Ljava/lang/String;)Z
++
++    move-result v1
++
++    if-nez v1, :cond_force_m3q
++
 +    goto :goto_device_name
 +
-+    :cond_force_m3q
++:cond_force_m3q
 +    const-string v0, "m3q"
 +
-+    :goto_device_name
++:goto_device_name
      iput-object v0, p0, Lcom/samsung/android/aicore/VersionConfigLoader;->mDeviceName:Ljava/lang/String;
-
+ 
      return-void
  .end method
