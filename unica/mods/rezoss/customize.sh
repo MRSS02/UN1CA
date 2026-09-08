@@ -1102,8 +1102,6 @@ APPLY_PATCH "system" "system/priv-app/SecSettings/SecSettings.apk" \
 LOG "- Patch services.jar AI notification priority/summary model gate"
 APPLY_PATCH "system" "system/framework/services.jar" \
     "$MODPATH/notification-priority/services.jar/0001-Allow-dm1q-dm2q-dm3q-AI-notification-priority.patch"
-APPLY_PATCH "system" "system/framework/services.jar" \
-    "$MODPATH/notification-priority/services.jar/0002-Allow-x1q-y2q-z3q-AI-notification-priority.patch"
 
 LOG "- Patch SettingsProvider notification priority/summary defaults"
 APPLY_PATCH "system" "system/priv-app/SettingsProvider/SettingsProvider.apk" \
