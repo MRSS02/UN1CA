@@ -342,8 +342,13 @@ if [[ "$SOURCE_FINGERPRINT_CONFIG_SENSOR" != "$TARGET_FINGERPRINT_CONFIG_SENSOR"
                 APPLY_PATCH "system" "system/priv-app/BiometricSetting/BiometricSetting.apk" \
                     "$MODPATH/fingerprint/side_fp/BiometricSetting.apk/0001-Add-FEATURE_FINGERPRINT_JDM_HAL-support.patch"
 
-                APPLY_PATCH "system" "system/framework/framework.jar" \
-                    "$MODPATH/fingerprint/side_fp/framework.jar/0001-Add-side-fingerprint-sensor-support.patch"
+                # Direct Smali Edits for InputRune side fingerprint handling instead of failing patch
+                SMALI_PATCH "system" "system/framework/framework.jar" \
+                    "smali_classes6/com/samsung/android/rune/InputRune.smali" "replace" \
+                    "PWM_SIDE_KEY_CONSTRAINS_WAKEUP:Z" \
+                    "sput-boolean v0, Lcom/samsung/android/rune/InputRune;->PWM_SIDE_KEY_CONSTRAINS_WAKEUP:Z" \
+                    "sput-boolean v1, Lcom/samsung/android/rune/InputRune;->PWM_SIDE_KEY_CONSTRAINS_WAKEUP:Z"
+
                 APPLY_PATCH "system" "system/framework/services.jar" \
                     "$MODPATH/fingerprint/side_fp/services.jar/0001-Add-side-fingerprint-sensor-support.patch"
                 EVAL "sed -i \"/implements/i .implements Lcom\/android\/server\/biometrics\/sensors\/fingerprint\/SemFpHalLifecycleListener;\" \"$APKTOOL_DIR/system/framework/services.jar/smali/com/android/server/biometrics/sensors/fingerprint/SemFingerprintServiceExtImpl.smali\""
