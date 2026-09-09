@@ -330,6 +330,7 @@ system/priv-app/OMCAgent5
 system/app/BBCAgent
 system/app/PartnerBookmarksProvider
 system/app/BookmarkProvider
+system/app/ChromeCustomizations
 system/app/Fast
 system/app/KidsHome_Installer
 system/app/Rampart
