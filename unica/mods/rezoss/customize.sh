@@ -10,8 +10,6 @@ ADD_TO_WORK_DIR "$MODPATH" "product" "overlay/framework-res__dm1qxxx__auto_gener
 ADD_TO_WORK_DIR "$MODPATH" "system" "." 0 0 755 "u:object_r:system_file:s0"
 ADD_TO_WORK_DIR "$MODPATH" "system_ext" "." 0 0 755 "u:object_r:system_file:s0"
 LOG "- Adding mountless AOSP zip boot animation support"
-ADD_TO_WORK_DIR "$MODPATH/DressRoom" "system" \
-    "system/priv-app/DressRoom" 0 0 755 "u:object_r:system_file:s0"
 ADD_TO_WORK_DIR "$MODPATH/bootanimation_zip" "system" \
     "system/bin/bootanimation_zip" 0 2000 755 "u:object_r:bootanim_exec:s0"
 ADD_TO_WORK_DIR "$MODPATH/bootanimation_zip" "system" \
