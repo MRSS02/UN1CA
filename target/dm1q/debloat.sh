@@ -241,7 +241,9 @@ system/priv-app/DigitalKey
 system/priv-app/PaymentFramework
 system/priv-app/SamsungCarKeyFw
 "
+
 SYSTEM_EXT_DEBLOAT+="
+priv-app/GoogleFeedback
 framework/org.carconnectivity.android.digitalkey.rangingintent.jar
 framework/org.carconnectivity.android.digitalkey.secureelement.jar
 "
@@ -300,10 +302,12 @@ PRODUCT_DEBLOAT+="
 app/Chrome
 app/Maps
 app/YouTube
+app/com.google.mainline.adservices
 priv-app/AndroidGlassesCore
 priv-app/AiWallpaper
 priv-app/AndroidAutoStub
 priv-app/Turbo
+
 "
 
 # SKT,KT,LG
@@ -328,6 +332,7 @@ system/priv-app/TService
 SYSTEM_DEBLOAT+="
 system/priv-app/OMCAgent5
 system/app/BBCAgent
+system/app/ARCore
 system/app/PartnerBookmarksProvider
 system/app/BookmarkProvider
 system/app/ChromeCustomizations
@@ -340,7 +345,6 @@ system/priv-app/HybridRadio
 system/priv-app/QRreader
 system/priv-app/SOAgent77
 system/priv-app/SPPPushClient
-system/priv-app/SamsungMagnifier3
 system/priv-app/SwiftkeyIme
 system/priv-app/SwiftkeySetting
 system/priv-app/GameOptimizingService
