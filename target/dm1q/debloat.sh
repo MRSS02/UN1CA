@@ -330,6 +330,7 @@ system/priv-app/TService
 
 #I don't need
 SYSTEM_DEBLOAT+="
+system/priv-app/DeviceBasedServiceConsent
 system/priv-app/OMCAgent5
 system/app/BBCAgent
 system/app/ARCore
