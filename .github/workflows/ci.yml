@@ -73,7 +73,7 @@ jobs:
       - name: Free disk space (2/3)
         uses: jlumbroso/free-disk-space@main
         with:
-          tool-cache: true
+          preinstalled-runtimes: true
 
       - name: Free disk space (3/3)
         uses: rokibhasansagar/slimhub_actions@main
@@ -134,10 +134,19 @@ jobs:
       - name: Build ROM
         run: ./scripts/make_rom.sh
 
+      - name: Upload patch reject files (on failure)
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: patch-rejects-${{ matrix.target }}-${{ github.run_id }}
+          path: |
+            out/target/${{ matrix.target }}/apktool/**/*.rej
+          if-no-files-found: ignore
+          retention-days: 7
+
       - name: Upload to GoFile
         run: |
           ZIP_FILE=$(find out -type f -name "*sign_FZH3.zip" | head -n 1)
-
           if [ -z "$ZIP_FILE" ]; then
             echo "Error: No ZIP file found in out/ directory!"
             exit 1

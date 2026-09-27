@@ -36,11 +36,11 @@ if [[ "$SOURCE_PRODUCT_SHIPPING_API_LEVEL" != "$TARGET_PRODUCT_SHIPPING_API_LEVE
         "isSupported(Landroid/content/Context;)Z" \
         "$SOURCE_PRODUCT_SHIPPING_API_LEVEL" \
         "$TARGET_PRODUCT_SHIPPING_API_LEVEL"
-    SMALI_PATCH "system" "system/framework/services.jar" \
-        "smali/com/android/server/enterprise/hdm/HdmVendorController.smali" "replace" \
-        "<init>()V" \
-        "$SOURCE_PRODUCT_SHIPPING_API_LEVEL" \
-        "$TARGET_PRODUCT_SHIPPING_API_LEVEL"
+#    SMALI_PATCH "system" "system/framework/services.jar" \
+#        "smali_classes2/com/android/server/enterprise/hdm/HdmVendorController.smali" "replace" \
+#        "<init>()V" \
+#        "$SOURCE_PRODUCT_SHIPPING_API_LEVEL" \
+#        "$TARGET_PRODUCT_SHIPPING_API_LEVEL"
     SMALI_PATCH "system" "system/framework/services.jar" \
         "smali/com/android/server/knox/dar/ddar/ta/TAProxy.smali" "replace" \
         "updateServiceHolder(Z)V" \
@@ -167,6 +167,15 @@ if ! $SOURCE_COMMON_SUPPORT_DYN_RESOLUTION_CONTROL; then
             "system" "system/bin/bootanimation" 0 2000 755 "u:object_r:bootanim_exec:s0"
         ADD_TO_WORK_DIR "$([[ "$TARGET_OS_SINGLE_SYSTEM_IMAGE" == "qssi" ]] && echo "b0qxxx" || echo "b0sxxx")" \
             "system" "system/bin/surfaceflinger" 0 2000 755 "u:object_r:surfaceflinger_exec:s0"
+        # Ensure IQtiComposer support (pre-API 36)
+        # Check unica/patches/legacy/customize.sh for more info.
+        if [ "$TARGET_PLATFORM_SDK_VERSION" -lt "36" ]; then
+            if [[ "$TARGET_OS_SINGLE_SYSTEM_IMAGE" == "qssi" ]] && \
+                    ! grep -q -r "IQtiComposer" "$WORK_DIR/vendor/etc/vintf"; then
+                # [b.lt #0x72b2b0] -> [nop]
+                HEX_PATCH "$WORK_DIR/system/system/bin/surfaceflinger" "9f8a00712b03005400068052" "9f8a00711f2003d500068052"
+            fi
+        fi
         ADD_TO_WORK_DIR "b0qxxx" "system" "system/media/battery_error.spi" 0 0 644 "u:object_r:system_file:s0"
         ADD_TO_WORK_DIR "b0qxxx" "system" "system/media/battery_low.spi" 0 0 644 "u:object_r:system_file:s0"
         ADD_TO_WORK_DIR "b0qxxx" "system" "system/media/battery_protection.spi" 0 0 644 "u:object_r:system_file:s0"
@@ -294,6 +303,14 @@ if [[ "$SOURCE_FINGERPRINT_CONFIG_SENSOR" != "$TARGET_FINGERPRINT_CONFIG_SENSOR"
 
                 if [[ "$TARGET_OS_SINGLE_SYSTEM_IMAGE" == "qssi" ]]; then
                     ADD_TO_WORK_DIR "r9qxxx" "system" "system/bin/surfaceflinger" 0 2000 755 "u:object_r:surfaceflinger_exec:s0"
+                    # Ensure IQtiComposer support (pre-API 36)
+                    # Check unica/patches/legacy/customize.sh for more info.
+                    if [ "$TARGET_PLATFORM_SDK_VERSION" -lt "36" ]; then
+                        if ! grep -q -r "IQtiComposer" "$WORK_DIR/vendor/etc/vintf"; then
+                            # [b.lt #0x72914c] -> [nop]
+                            HEX_PATCH "$WORK_DIR/system/system/bin/surfaceflinger" "9f8a00712b03005400068052" "9f8a00711f2003d500068052"
+                        fi
+                    fi
                     ADD_TO_WORK_DIR "r9qxxx" "system" "system/lib/libgui.so" 0 0 644 "u:object_r:system_lib_file:s0"
                     ADD_TO_WORK_DIR "r9qxxx" "system" "system/lib/libui.so" 0 0 644 "u:object_r:system_lib_file:s0"
                     ADD_TO_WORK_DIR "r9qxxx" "system" "system/lib64/libgui.so" 0 0 644 "u:object_r:system_lib_file:s0"
@@ -347,7 +364,8 @@ if [[ "$SOURCE_FINGERPRINT_CONFIG_SENSOR" != "$TARGET_FINGERPRINT_CONFIG_SENSOR"
                     "smali_classes6/com/samsung/android/rune/InputRune.smali" "replace" \
                     "PWM_SIDE_KEY_CONSTRAINS_WAKEUP:Z" \
                     "sput-boolean v0, Lcom/samsung/android/rune/InputRune;->PWM_SIDE_KEY_CONSTRAINS_WAKEUP:Z" \
-                    "sput-boolean v1, Lcom/samsung/android/rune/InputRune;->PWM_SIDE_KEY_CONSTRAINS_WAKEUP:Z"
+                    "sput-boolean v1, Lcom/samsung/android/rune/InputRune;->PWM_SIDE_KEY_CONSTRAINS_WAKEUP:Z"\
+                    || LOGW "PWM_SIDE_KEY_CONSTRAINS_WAKEUP field not found in this firmware, skipping"
 
                 APPLY_PATCH "system" "system/framework/services.jar" \
                     "$MODPATH/fingerprint/side_fp/services.jar/0001-Add-side-fingerprint-sensor-support.patch"
@@ -436,7 +454,7 @@ if [[ "$SOURCE_LCD_CONFIG_CONTROL_AUTO_BRIGHTNESS" != "$TARGET_LCD_CONFIG_CONTRO
         "$SOURCE_LCD_CONFIG_CONTROL_AUTO_BRIGHTNESS" \
         "$TARGET_LCD_CONFIG_CONTROL_AUTO_BRIGHTNESS"
     SMALI_PATCH "system" "system/priv-app/SecSettings/SecSettings.apk" \
-        "smali_classes4/com/samsung/android/settings/Rune.smali" "replace" \
+        "smali_classes5/com/samsung/android/settings/Rune.smali" "replace" \
         "<clinit>()V" \
         "$SOURCE_LCD_CONFIG_CONTROL_AUTO_BRIGHTNESS" \
         "$TARGET_LCD_CONFIG_CONTROL_AUTO_BRIGHTNESS"
@@ -461,7 +479,7 @@ if [[ "$SOURCE_LCD_CONFIG_SEAMLESS_BRT" != "$TARGET_LCD_CONFIG_SEAMLESS_BRT" ]] 
             "SEAMLESS_BRT: $TARGET_LCD_CONFIG_SEAMLESS_BRT"
         SMALI_PATCH "system" "system/framework/framework.jar" \
             "smali_classes6/com/samsung/android/hardware/display/RefreshRateConfig.smali" "replace" \
-            "dump(Ljava/io/PrintWriter;Ljava/lang/String;Z)V" \
+            "dumpProductFeature(Ljava/io/PrintWriter;Ljava/lang/String;Z)V" \
             "SEAMLESS_LUX: $SOURCE_LCD_CONFIG_SEAMLESS_LUX" \
             "SEAMLESS_LUX: $TARGET_LCD_CONFIG_SEAMLESS_LUX"
         SMALI_PATCH "system" "system/framework/framework.jar" \
@@ -809,8 +827,6 @@ if $SOURCE_WLAN_SUPPORT_80211AX; then
             ABORT "TARGET_WLAN_SUPPORT_80211AX is required by TARGET_WLAN_SUPPORT_80211AX_6GHZ"
         fi
         if ! $SOURCE_WLAN_SUPPORT_80211AX_6GHZ; then
-            APPLY_PATCH "system" "system/framework/semwifi-service.jar" \
-                "$MODPATH/wifi/80211ax/semwifi-service.jar/0001-Disable-80211AX-support.patch"
             APPLY_PATCH "system" "system/priv-app/SecSettings/SecSettings.apk" \
                 "$MODPATH/wifi/80211ax/SecSettings.apk/0001-Disable-80211AX-support.patch"
             APPLY_PATCH "system_ext" "priv-app/SystemUI/SystemUI.apk" \
@@ -929,6 +945,19 @@ elif $SOURCE_WLAN_SUPPORT_MIMO && ! $TARGET_WLAN_SUPPORT_MIMO; then
         "smali/com/samsung/android/server/wifi/SemWifiServiceImpl.smali" "return" \
         "getNumOfWifiAnt()I" \
         "1"
+fi
+
+# SEC_PRODUCT_FEATURE_WLAN_SUPPORT_MOBILEAP_11AX
+if $SOURCE_WLAN_SUPPORT_MOBILEAP_11AX; then
+    if ! $TARGET_WLAN_SUPPORT_MOBILEAP_11AX; then
+        APPLY_PATCH "system" "system/framework/semwifi-service.jar" \
+            "$MODPATH/wifi/80211ax/semwifi-service.jar/0001-Disable-MOBILEAP_11AX-support.patch"
+    fi
+else
+    if $TARGET_WLAN_SUPPORT_MOBILEAP_11AX; then
+        # TODO handle this condition
+        LOG_MISSING_PATCHES "SOURCE_WLAN_SUPPORT_MOBILEAP_11AX" "TARGET_WLAN_SUPPORT_MOBILEAP_11AX"
+    fi
 fi
 
 # SEC_PRODUCT_FEATURE_WLAN_SUPPORT_MOBILEAP_5G_BASEDON_COUNTRY
